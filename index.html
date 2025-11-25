@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html data-bs-theme="dark">
+    <head>
+        <title>Loja do Gamster</title>
+        <meta charset="UTF-8">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+        <link rel="stylesheet" href="css/mycss.css">
+
+        <script src="js/funcoes.js"></script>
+    </head>
+    <body>
+        <div class="container">
+        <h1>Loja do Gamster</h1>
+
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Imagem</th>
+                    <th>Produto</th>
+                    <th>Preço unitário</th>
+                    <th>Quantidade</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="img/shapeluan.jpg" alt="shape" width="150">
+                    </td>
+                    <td>
+                        <div>Shape Luan oliveira</div>
+                        <div>Tamanho 8.0</div>
+                        <div>Tipo marfim</div>
+                    </td>
+                    <td id="valor_1">500</td>
+                    <td>
+                        <span class="badge text-bg-danger" onclick="carrinho(1, '-')"><i class="bi bi-dash"></i></span>
+                        <span id="qtd_1">0</span>
+                        <span class="badge text-bg-success" onclick="carrinho(1, '+')"><i class="bi bi-plus"></i></span>
+                    </td>
+                    <td id="total_1">0</td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <img src="img/tenis.webp" alt="tênis" width="150">
+                    </td>
+                    <td>
+                        <div>Tênis Hocks</div>
+                        <div>Skate e casual</div>
+                        <div><span id="tamanho-tenis">Tamanho:</span> 37-43</div>
+                    </td>
+                    <td id="valor_2">300</td>
+                    <td>
+                        <span class="badge text-bg-danger" onclick="carrinho(2, '-')"><i class="bi bi-dash"></i></span>
+                        <span id="qtd_2">0</span>
+                        <span class="badge text-bg-success" onclick="carrinho(2, '+')"><i class="bi bi-plus"></i></span>
+                    </td>
+                    <td id="total_2">0</td>
+
+                </tr>                <tr></tr>
+                    <td>
+                        <img src="img/camisa.webp" alt="camisa" width="150">
+                    </td>
+                    <td>
+                        <div>Camisa thrasher</div>
+                        <div>Não indicada para posers</div>
+                        <div><span class="tamanho-camisa">Tamanho:</span> P, M e G</div>
+                    </td>
+                    <td id="valor_3">70</td>
+                    <td>
+                        <span class="badge text-bg-danger" onclick="carrinho(3, '-')"><i class="bi bi-dash"></i></span>
+                        <span id="qtd_3">0</span>
+                        <span class="badge text-bg-success" onclick="carrinho(3, '+')"><i class="bi bi-plus"></i></span>
+                    </td>
+                    <td id="total_3">0</td>
+
+                </tr>
+            </tbody>
+        </table>
+
+            <footer class="text-center">
+                <span><i class="bi bi-cart4"></i>Subtotal: R$ <span id="subtotal">0</span></span>
+            </footer>
+        </div>
+    </body>
+</html>
